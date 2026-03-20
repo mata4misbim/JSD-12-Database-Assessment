@@ -19,3 +19,10 @@
 --
 -- Your thinking:
 --
+
+SELECT 
+    orders.order_date, 
+    orders.total_price
+FROM orders
+INNER JOIN staff ON orders.staff_id = staff.staff_id
+WHERE staff.first_name = 'Jane' AND staff.last_name = 'Doe';

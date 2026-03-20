@@ -18,3 +18,9 @@
 --
 -- Your thinking:
 --
+
+SELECT 
+    name, 
+    price
+FROM MenuItems
+WHERE price < 10.00;
